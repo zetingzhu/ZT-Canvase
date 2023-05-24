@@ -15,11 +15,21 @@
         tools:context=".MainActivity">
 
 
-        <com.zzt.samplecanvas.sample.ViewV1
+        <com.zzt.samplecanvas.view.ArrowLineView
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+
+        <com.zzt.samplecanvas.view.MagnifierLayout
             android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:background="@color/white"
-            app:viewValue="0" />
+            android:layout_height="wrap_content">
+
+            <com.zzt.samplecanvas.sample.ViewV1
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="@color/white"
+                app:viewValue="0" />
+        </com.zzt.samplecanvas.view.MagnifierLayout>
 
         <com.zzt.samplecanvas.sample.ViewV1
             android:layout_width="match_parent"

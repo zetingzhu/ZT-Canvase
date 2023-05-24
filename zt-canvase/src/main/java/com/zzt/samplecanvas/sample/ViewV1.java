@@ -25,9 +25,11 @@ import android.graphics.Shader;
 import android.graphics.SweepGradient;
 import android.graphics.Xfermode;
 import android.os.Build;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -117,6 +119,7 @@ public class ViewV1 extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+
         super.onDraw(canvas);
         drawPg(canvas);
 
