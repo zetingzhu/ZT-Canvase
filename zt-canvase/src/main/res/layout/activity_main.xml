@@ -14,10 +14,28 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+        <com.zzt.samplecanvas.view.ClipRectView
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+        <com.zzt.samplecanvas.view.DDD1
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#333333" />
 
         <com.zzt.samplecanvas.view.ArrowLineView
-            android:layout_width="500dp"
-            android:layout_height="500dp" />
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <com.zzt.samplecanvas.view.ArrowLineViewV1
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
 
 
         <com.zzt.samplecanvas.view.MagnifierLayout
