@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppFrame5">
         <activity
-            android:name=".MainActivity"
+            android:name=".act.ActDraw2"
+            android:exported="false" />
+        <activity
+            android:name=".act.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DrawViewAct"/>
+        <activity
+            android:name=".act.DrawViewAct"
+            android:exported="false" />
     </application>
 
 </manifest>

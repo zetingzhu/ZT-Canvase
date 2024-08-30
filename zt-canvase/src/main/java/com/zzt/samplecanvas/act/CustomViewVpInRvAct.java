@@ -1,9 +1,11 @@
-package com.zzt.samplecanvas;
+package com.zzt.samplecanvas.act;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.zzt.samplecanvas.R;
 
 /**
  * @author: zeting

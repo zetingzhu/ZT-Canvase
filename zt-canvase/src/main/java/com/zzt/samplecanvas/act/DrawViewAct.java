@@ -1,10 +1,12 @@
-package com.zzt.samplecanvas;
+package com.zzt.samplecanvas.act;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.zzt.samplecanvas.R;
 
 /**
  * @author: zeting
@@ -13,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class DrawViewAct extends AppCompatActivity {
     public static void start(Context context) {
         Intent starter = new Intent(context, DrawViewAct.class);
+        starter.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(starter);
     }
 

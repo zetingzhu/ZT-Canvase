@@ -1,4 +1,4 @@
-package com.zzt.samplecanvas;
+package com.zzt.samplecanvas.act;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.zzt.adapter.StartActivityRecyclerAdapter;
 import com.zzt.entity.StartActivityDao;
+import com.zzt.samplecanvas.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private void initData() {
         List<StartActivityDao> mList = new ArrayList<>();
         mList.add(new StartActivityDao("自定义画图", "里面包含很多点，线，图形绘制", "1"));
-        mList.add(new StartActivityDao("来一个绘图绘制已知控件的", "测试自定义Viewpager 包含 RecycleView", "2"));
+        mList.add(new StartActivityDao("自定义画图 2", " ", "2"));
 
         StartActivityRecyclerAdapter.setAdapterData(rv_list, RecyclerView.VERTICAL, mList, new StartActivityRecyclerAdapter.OnItemClickListener<StartActivityDao>() {
             @Override
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                         DrawViewAct.start(getBaseContext());
                         break;
                     case "2":
-
+                        ActDraw2.start(MainActivity.this);
                         break;
                 }
             }
